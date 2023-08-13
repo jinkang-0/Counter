@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Counter</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main>
+        <p id="counter">0</p>
+        <aside>
+            <button id="add">+</button>
+            <button id="subtract">-</button>
+        </aside>
+    </main>
+
+    <script>
+        const addBtn = document.getElementById('add');
+        const subBtn = document.getElementById('subtract');
+        const display = document.getElementById('counter');
+        var counter = 0;
+
+        addBtn.addEventListener('click', () => {
+            counter++;
+            updateDisplay();
+        });
+
+        subBtn.addEventListener('click', () => {
+            counter--;
+            updateDisplay();
+        });
+
+        display.addEventListener('dblclick', () => {
+            counter = 0;
+            updateDisplay();
+        });
+
+        function updateDisplay() {
+            display.innerHTML = counter;
+        }
+    </script>
+</body>
+</html>

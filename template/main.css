@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Inter:wght@400;500&family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto 5rem;
+    background: #363636;
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+    overflow: none;
+}
+
+main > p {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-align: right;
+    font-size: 4rem;
+    vertical-align: middle;
+    margin: auto 2rem;
+}
+
+aside {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+aside > button {
+    font-size: 3rem;
+    color: white;
+    background: #444444;
+    outline: none;
+    border: none;
+}
+
+aside > button:hover {
+    background: #4c4c4c;
+}
+
+aside > button:active {
+    background: #3e3e3e;
+}
